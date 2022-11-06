@@ -1,7 +1,13 @@
 let num=11;
-for(let i=2;i<=num**0.5;i++){
+
+let factor=0;
+for(let i=1;i<=num;i++){
   if(num%i==0){
-    console.log("It is a prime number");
-    break;
+    factor++;
   }
+}
+if(factor==2){
+  console.log("It is a prime number");
+}else{
+  console.log("Not a prime number");
 }
